@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop of Holding QR Codes</title>
+    <link rel="stylesheet" href="/styles.css"/>
+    <link rel="icon" href="/assets/d20.svg"/>
+</head>
+<body>
+    <div style='margin: auto; width: 100vmin; height: 100vmin' id='qrcode'></div>
+    <div id='link' style='text-align: center; font-size: 5vw; font-weight: bold;'>
+        https://shop.ofholding.ca/gonggi
+    </div>
+    <script src='/assets/qrcode.min.js'></script>
+    <script type='text/javascript'>
+        console.log(document.getElementById('link').textContent.trim());
+        const qrcode = new QRCode({
+            content: document.getElementById('link').textContent.trim(),
+            container: 'svg-viewbox', ecl: 'Q', 
+            pretty: false, xmlDeclaration: false, join: true});
+        document.getElementById("qrcode").innerHTML = qrcode.svg();
+    </script>
+</body>
+</html>

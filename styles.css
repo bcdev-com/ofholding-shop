@@ -1,0 +1,41 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: system-ui, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    background: white;
+    color: black;
+}
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, button, input, label {
+  line-height: 1.1;
+}
+h1, h2, h3, h4 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+input, button, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+a, a:active, a:hover, a:visited {
+    text-decoration: none;
+    color: navy;
+}
+main {
+    margin: 1em;
+}
